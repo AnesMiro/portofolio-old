@@ -1,0 +1,1090 @@
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.navpic{
+    margin: -2%;
+    height: 50vh;
+    width: 103%; 
+}
+
+.hide {
+    max-height: 0 !important;
+}
+
+.dropdown{
+	border: 0.1em solid black;
+	width: 10em;
+	margin-top: -10%;
+	font-size: 5vh;
+}
+
+.dropdown .title{
+	margin: .3em .3em .3em .3em;	
+	width: 100%;
+}
+
+.dropdown .title .fa-angle-right{
+	float: right;
+	margin-right: .7em;
+	transition: transform .3s;
+}
+
+.dropdown .menu{
+	transition: max-height .5s ease-out;
+	max-height: 20em;
+	overflow: hidden;
+	font-size: 3vh;
+}
+
+.dropdown .menu .option{
+	margin: .3em .3em .3em .3em;
+	margin-top: 0.3em;
+}
+
+.dropdown .menu .option:hover{
+	background: rgba(0,0,0,0.2);
+}
+
+.pointerCursor:hover{
+	cursor: pointer;
+}
+
+.rotate-90{
+	transform: rotate(90deg);
+}
+
+
+
+.fa-bars:hover{
+	color: rgb(76, 76, 196);
+}
+
+.option a:hover{
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 20%;
+    border-bottom: 0;
+    padding-bottom: .3em;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.ime{
+    text-align: center;
+    font-size: 5vh;
+    margin-left: -15%;
+    margin-top: -19%;
+    text-shadow: black;
+    font-weight: 50%;
+	color: rgb(31, 31, 31);
+	
+}
+
+
+.link {
+	outline: none;
+	text-decoration: none;
+	position: relative;
+	font-size: 10vh;
+	line-height: 1;
+	color: rgb(65, 64, 64);
+	display: inline-block;
+}
+
+.link--kukuri {
+	text-transform: uppercase;
+	font-weight: 900;
+	overflow: hidden;
+	line-height: 0.75;
+	color: rgb(65, 64, 64);
+	text-transform: uppercase;
+	font-weight: 900;
+	overflow: hidden;
+	line-height: 0.75;
+	color: rgb(61, 51, 51);
+}
+
+.link--kukuri:hover {
+	color: rgb(54, 53, 53);
+}
+
+.link--kukuri::after {
+	content: '';
+	position: absolute;
+	height: 15px;
+	width: 100%;
+	top: 50%;
+	margin-top: -8px;
+	right: 0;
+	background: white;
+	transform: translate3d(-100%,0,0);
+	transition: transform 0.4s;
+	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+}
+
+.link--kukuri:hover::after {
+	transform: translate3d(100%,0,0);
+}
+
+.link--kukuri::before {
+	content: attr(data-letters);
+	position: absolute;
+	z-index: 2;
+	overflow: hidden;
+	color: rgb(0, 0, 0);
+	white-space: nowrap;
+	width: 0%;
+	transition: width 0.4s 0.3s;
+}
+
+.link--kukuri:hover::before {
+	width: 100%;
+};
+
+
+.biz{
+    font-size: 2vh;
+}
+
+.profpic{
+	width: 20%;
+	border-radius: 100%;
+	border: solid 3px black;
+	margin-top: 20%;
+	margin-left: 40%;
+}
+
+#aboutme{
+	text-align: center;
+	font-size: 5vh;
+}
+
+#projects{
+	text-align: center;
+	font-size: 5vh;
+}
+
+#contactinfo {
+	font-size: 5vh;
+}
+
+@media only screen and (max-width: 768px) {
+	html{
+		scroll-behavior: smooth;
+	}
+	
+	body{
+		font-family: sans-serif;
+	}
+	
+	.navpic{
+		margin: -2%;
+		height: 15vh;
+		width: 103%; 
+	}
+	
+	.hide {
+		max-height: 0 !important;
+	}
+	
+	.dropdown{
+		border: 0.1em solid black;
+		width: 10em;
+		margin-bottom: 1em;
+		font-size: 3vh;
+		margin-top: 15%;
+	}
+	
+	.dropdown .title{
+		margin: .3em .3em .3em .3em;	
+		width: 100%;
+	}
+	
+	.dropdown .title .fa-angle-right{
+		float: right;
+		margin-right: .7em;
+		transition: transform .3s;
+	}
+	
+	.dropdown .menu{
+		transition: max-height .5s ease-out;
+		max-height: 20em;
+		overflow: hidden;
+		font-size: 2vh;
+	}
+	
+	.dropdown .menu .option{
+		margin: .3em .3em .3em .3em;
+		margin-top: 0.3em;
+	}
+	
+	.dropdown .menu .option:hover{
+		background: rgba(0,0,0,0.2);
+	}
+	
+	.pointerCursor:hover{
+		cursor: pointer;
+	}
+	
+	.rotate-90{
+		transform: rotate(90deg);
+	}
+	.fa-bars:hover{
+		color: rgb(76, 76, 196);
+	}
+	
+	.option a:hover{
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+		background-position: bottom;
+		background-repeat: repeat-x;
+		background-size: 20%;
+		border-bottom: 0;
+		padding-bottom: .3em;
+		text-decoration: none;
+	}
+	
+	a{
+		text-decoration: none;
+		color: black;
+	}
+	
+	.ime{
+		text-align: center;
+		font-size: 1.8vh;
+		margin-left: -33%;
+		margin-top: -35%;
+		text-shadow: black;
+		font-weight: 50%;
+		color: rgb(31, 31, 31);
+		
+	}
+	
+	.ime:hover{
+		color: rgb(37, 37, 158);
+	}
+	
+	.link {
+		outline: none;
+		text-decoration: none;
+		position: relative;
+		font-size: 2.5vh;
+		line-height: 1;
+		color: rgb(65, 64, 64);
+		display: inline-block;
+	}
+	
+	.link--kukuri {
+		text-transform: uppercase;
+		font-weight: 900;
+		overflow: hidden;
+		line-height: 0.75;
+		color: rgb(65, 64, 64);
+		text-transform: uppercase;
+		font-weight: 900;
+		overflow: hidden;
+		line-height: 0.75;
+		color: rgb(61, 51, 51);
+	}
+	
+	.link--kukuri:hover {
+		color: rgb(54, 53, 53);
+	}
+	
+	.link--kukuri::after {
+		content: '';
+		position: absolute;
+		height: 15px;
+		width: 100%;
+		top: 50%;
+		margin-top: -8px;
+		right: 0;
+		background: white;
+		transform: translate3d(-100%,0,0);
+		transition: transform 0.4s;
+		transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+	}
+	
+	.link--kukuri:hover::after {
+		transform: translate3d(100%,0,0);
+	}
+	
+	.link--kukuri::before {
+		content: attr(data-letters);
+		position: absolute;
+		z-index: 2;
+		overflow: hidden;
+		color: rgb(0, 0, 0);
+		white-space: nowrap;
+		width: 0%;
+		transition: width 0.4s 0.3s;
+	}
+	
+	.link--kukuri:hover::before {
+		width: 100%;
+	};
+	
+	
+	.biz{
+		font-size: 4vh;
+	}
+
+	.profpic{
+		width: 50%;
+		border-radius: 100%;
+		border: solid 3px black;
+		margin-top: -12%;
+		margin-left: 20%;
+	}
+
+	#aboutme{
+		text-align: center;
+		font-size: 5vh;
+	}
+
+	#projects{
+		text-align: center;
+		font-size: 3vh;
+	}
+
+	#contactinfo {
+		font-size: 3vh;
+	}
+	
+
+@media only screen and (max-width: 360px) {
+	html{
+		scroll-behavior: smooth;
+	}
+	
+	body{
+		font-family: sans-serif;
+	}
+	
+	.navpic{
+		margin: -2%;
+		height: 50vh;
+		width: 103%; 
+	}
+	
+	.hide {
+		max-height: 0 !important;
+	}
+	
+	.dropdown{
+		border: 0.1em solid black;
+		width: 10em;
+		margin-bottom: 1em;
+	}
+	
+	.dropdown .title{
+		margin: .3em .3em .3em .3em;	
+		width: 100%;
+	}
+	
+	.dropdown .title .fa-angle-right{
+		float: right;
+		margin-right: .7em;
+		transition: transform .3s;
+	}
+	
+	.dropdown .menu{
+		transition: max-height .5s ease-out;
+		max-height: 20em;
+		overflow: hidden;
+	}
+	
+	.dropdown .menu .option{
+		margin: .3em .3em .3em .3em;
+		margin-top: 0.3em;
+	}
+	
+	.dropdown .menu .option:hover{
+		background: rgba(0,0,0,0.2);
+	}
+	
+	.pointerCursor:hover{
+		cursor: pointer;
+	}
+	
+	.rotate-90{
+		transform: rotate(90deg);
+	}
+	.fa-bars:hover{
+		color: rgb(76, 76, 196);
+	}
+	
+	.option a:hover{
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+		background-position: bottom;
+		background-repeat: repeat-x;
+		background-size: 20%;
+		border-bottom: 0;
+		padding-bottom: .3em;
+		text-decoration: none;
+	}
+	
+	a{
+		text-decoration: none;
+		color: black;
+	}
+	
+	.ime{
+		text-align: center;
+		font-size: 2vh;
+		margin-left: -15%;
+		margin-top: -19%;
+		text-shadow: black;
+		font-weight: 50%;
+		color: rgb(31, 31, 31);
+		
+	}
+	
+	.ime:hover{
+		color: rgb(37, 37, 158);
+	}
+	
+	.link {
+		outline: none;
+		text-decoration: none;
+		position: relative;
+		font-size: 10vh;
+		line-height: 1;
+		color: rgb(65, 64, 64);
+		display: inline-block;
+	}
+	
+	.link--kukuri {
+		text-transform: uppercase;
+		font-weight: 900;
+		overflow: hidden;
+		line-height: 0.75;
+		color: rgb(65, 64, 64);
+		text-transform: uppercase;
+		font-weight: 900;
+		overflow: hidden;
+		line-height: 0.75;
+		color: rgb(61, 51, 51);
+	}
+	
+	.link--kukuri:hover {
+		color: rgb(54, 53, 53);
+	}
+	
+	.link--kukuri::after {
+		content: '';
+		position: absolute;
+		height: 15px;
+		width: 100%;
+		top: 50%;
+		margin-top: -8px;
+		right: 0;
+		background: white;
+		transform: translate3d(-100%,0,0);
+		transition: transform 0.4s;
+		transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+	}
+	
+	.link--kukuri:hover::after {
+		transform: translate3d(100%,0,0);
+	}
+	
+	.link--kukuri::before {
+		content: attr(data-letters);
+		position: absolute;
+		z-index: 2;
+		overflow: hidden;
+		color: rgb(0, 0, 0);
+		white-space: nowrap;
+		width: 0%;
+		transition: width 0.4s 0.3s;
+	}
+	
+	.link--kukuri:hover::before {
+		width: 100%;
+	};
+	
+	
+	.biz{
+		font-size: 2vh;
+	}
+
+	.profpic{
+		width: 20%;
+		border-radius: 100%;
+		border: solid 3px black;
+		margin-top: 20%;
+		margin-left: 40%;
+	}
+
+	#aboutme{
+		text-align: center;
+		font-size: 5vh;
+	}
+
+	#projects{
+		text-align: center;
+		font-size: 3vh;
+	}
+
+	#contactinfo {
+		font-size: 3vh;
+	}
+	
+
+@media only screen and (max-width: 414px) {
+	html{
+		scroll-behavior: smooth;
+	}
+	
+	body{
+		font-family: sans-serif;
+	}
+	
+	.navpic{
+		margin: -2%;
+		height: 50vh;
+		width: 103%; 
+	}
+	
+	.hide {
+		max-height: 0 !important;
+	}
+	
+	.dropdown{
+		border: 0.1em solid black;
+		width: 10em;
+		margin-bottom: 1em;
+	}
+	
+	.dropdown .title{
+		margin: .3em .3em .3em .3em;	
+		width: 100%;
+	}
+	
+	.dropdown .title .fa-angle-right{
+		float: right;
+		margin-right: .7em;
+		transition: transform .3s;
+	}
+	
+	.dropdown .menu{
+		transition: max-height .5s ease-out;
+		max-height: 20em;
+		overflow: hidden;
+	}
+	
+	.dropdown .menu .option{
+		margin: .3em .3em .3em .3em;
+		margin-top: 0.3em;
+	}
+	
+	.dropdown .menu .option:hover{
+		background: rgba(0,0,0,0.2);
+	}
+	
+	.pointerCursor:hover{
+		cursor: pointer;
+	}
+	
+	.rotate-90{
+		transform: rotate(90deg);
+	}
+	.fa-bars:hover{
+		color: rgb(76, 76, 196);
+	}
+	
+	.option a:hover{
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+		background-position: bottom;
+		background-repeat: repeat-x;
+		background-size: 20%;
+		border-bottom: 0;
+		padding-bottom: .3em;
+		text-decoration: none;
+	}
+	
+	a{
+		text-decoration: none;
+		color: black;
+	}
+	
+	.ime{
+		text-align: center;
+		font-size: 3vh;
+		margin-left: -15%;
+		margin-top: -19%;
+		text-shadow: black;
+		font-weight: 50%;
+		color: rgb(31, 31, 31);
+		
+	}
+	
+	.ime:hover{
+		color: rgb(37, 37, 158);
+	}
+	
+	.link {
+		outline: none;
+		text-decoration: none;
+		position: relative;
+		font-size: 10vh;
+		line-height: 1;
+		color: rgb(65, 64, 64);
+		display: inline-block;
+	}
+	
+	.link--kukuri {
+		text-transform: uppercase;
+		font-weight: 900;
+		overflow: hidden;
+		line-height: 0.75;
+		color: rgb(65, 64, 64);
+		text-transform: uppercase;
+		font-weight: 900;
+		overflow: hidden;
+		line-height: 0.75;
+		color: rgb(61, 51, 51);
+	}
+	
+	.link--kukuri:hover {
+		color: rgb(54, 53, 53);
+	}
+	
+	.link--kukuri::after {
+		content: '';
+		position: absolute;
+		height: 15px;
+		width: 100%;
+		top: 50%;
+		margin-top: -8px;
+		right: 0;
+		background: white;
+		transform: translate3d(-100%,0,0);
+		transition: transform 0.4s;
+		transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+	}
+	
+	.link--kukuri:hover::after {
+		transform: translate3d(100%,0,0);
+	}
+	
+	.link--kukuri::before {
+		content: attr(data-letters);
+		position: absolute;
+		z-index: 2;
+		overflow: hidden;
+		color: rgb(0, 0, 0);
+		white-space: nowrap;
+		width: 0%;
+		transition: width 0.4s 0.3s;
+	}
+	
+	.link--kukuri:hover::before {
+		width: 100%;
+	};
+	
+	
+	.biz{
+		font-size: 2vh;
+	}
+
+	.profpic{
+		width: 20%;
+		border-radius: 100%;
+		border: solid 3px black;
+		margin-top: 20%;
+		margin-left: 40%;
+	}
+
+	#aboutme{
+		text-align: center;
+		font-size: 5vh;
+	}
+
+	#projects{
+		text-align: center;
+		font-size: 3vh;
+	}
+
+	#contactinfo {
+		font-size: 3vh;
+	}
+	
+
+@media only screen and (max-width: 375px) {
+	html{
+		scroll-behavior: smooth;
+	}
+	
+	body{
+		font-family: sans-serif;
+	}
+	
+	.navpic{
+		margin: -2%;
+		height: 50vh;
+		width: 103%; 
+	}
+	
+	.hide {
+		max-height: 0 !important;
+	}
+	
+	.dropdown{
+		border: 0.1em solid black;
+		width: 10em;
+		margin-bottom: 1em;
+	}
+	
+	.dropdown .title{
+		margin: .3em .3em .3em .3em;	
+		width: 100%;
+	}
+	
+	.dropdown .title .fa-angle-right{
+		float: right;
+		margin-right: .7em;
+		transition: transform .3s;
+	}
+	
+	.dropdown .menu{
+		transition: max-height .5s ease-out;
+		max-height: 20em;
+		overflow: hidden;
+	}
+	
+	.dropdown .menu .option{
+		margin: .3em .3em .3em .3em;
+		margin-top: 0.3em;
+	}
+	
+	.dropdown .menu .option:hover{
+		background: rgba(0,0,0,0.2);
+	}
+	
+	.pointerCursor:hover{
+		cursor: pointer;
+	}
+	
+	.rotate-90{
+		transform: rotate(90deg);
+	}
+	.fa-bars:hover{
+		color: rgb(76, 76, 196);
+	}
+	
+	.option a:hover{
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+		background-position: bottom;
+		background-repeat: repeat-x;
+		background-size: 20%;
+		border-bottom: 0;
+		padding-bottom: .3em;
+		text-decoration: none;
+	}
+	
+	a{
+		text-decoration: none;
+		color: black;
+	}
+	
+	.ime{
+		text-align: center;
+		font-size: 3vh;
+		margin-left: -15%;
+		margin-top: -19%;
+		text-shadow: black;
+		font-weight: 50%;
+		color: rgb(31, 31, 31);
+		
+	}
+	
+	.ime:hover{
+		color: rgb(37, 37, 158);
+	}
+	
+	.link {
+		outline: none;
+		text-decoration: none;
+		position: relative;
+		font-size: 10vh;
+		line-height: 1;
+		color: rgb(65, 64, 64);
+		display: inline-block;
+	}
+	
+	.link--kukuri {
+		text-transform: uppercase;
+		font-weight: 900;
+		overflow: hidden;
+		line-height: 0.75;
+		color: rgb(65, 64, 64);
+		text-transform: uppercase;
+		font-weight: 900;
+		overflow: hidden;
+		line-height: 0.75;
+		color: rgb(61, 51, 51);
+	}
+	
+	.link--kukuri:hover {
+		color: rgb(54, 53, 53);
+	}
+	
+	.link--kukuri::after {
+		content: '';
+		position: absolute;
+		height: 15px;
+		width: 100%;
+		top: 50%;
+		margin-top: -8px;
+		right: 0;
+		background: white;
+		transform: translate3d(-100%,0,0);
+		transition: transform 0.4s;
+		transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+	}
+	
+	.link--kukuri:hover::after {
+		transform: translate3d(100%,0,0);
+	}
+	
+	.link--kukuri::before {
+		content: attr(data-letters);
+		position: absolute;
+		z-index: 2;
+		overflow: hidden;
+		color: rgb(0, 0, 0);
+		white-space: nowrap;
+		width: 0%;
+		transition: width 0.4s 0.3s;
+	}
+	
+	.link--kukuri:hover::before {
+		width: 100%;
+	};
+	
+	
+	.biz{
+		font-size: 2vh;
+	}
+
+	.profpic{
+		width: 20%;
+		border-radius: 100%;
+		border: solid 3px black;
+		margin-top: 20%;
+		margin-left: 40%;
+	}
+
+	#aboutme{
+		text-align: center;
+		font-size: 5vh;
+	}
+
+	#projects{
+		text-align: center;
+		font-size: 3vh;
+	}
+
+	#contactinfo {
+		font-size: 3vh;
+	}
+	
+
+@media only screen and (max-width: 740px) {
+	html{
+		scroll-behavior: smooth;
+	}
+	
+	body{
+		font-family: sans-serif;
+	}
+	
+	.navpic{
+		margin: -2%;
+		height: 15vh;
+		width: 103%; 
+	}
+	
+	.hide {
+		max-height: 0 !important;
+	}
+	
+	.dropdown{
+		border: 0.1em solid black;
+		width: 10em;
+		margin-bottom: 1em;
+		font-size: 3vh;
+		margin-top: 20%;
+	}
+	
+	.dropdown .title{
+		margin: .3em .3em .3em .3em;	
+		width: 100%;
+	}
+	
+	.dropdown .title .fa-angle-right{
+		float: right;
+		margin-right: .7em;
+		transition: transform .3s;
+	}
+	
+	.dropdown .menu{
+		transition: max-height .5s ease-out;
+		max-height: 20em;
+		overflow: hidden;
+		font-size: 2vh;
+	}
+	
+	.dropdown .menu .option{
+		margin: .3em .3em .3em .3em;
+		margin-top: 0.3em;
+	}
+	
+	.dropdown .menu .option:hover{
+		background: rgba(0,0,0,0.2);
+	}
+	
+	.pointerCursor:hover{
+		cursor: pointer;
+	}
+	
+	.rotate-90{
+		transform: rotate(90deg);
+	}
+	.title .pointerCursor{
+		margin-top: 50%;;
+	}
+	.fa-bars:hover{
+		color: rgb(76, 76, 196);
+	}
+	
+	.option a:hover{
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+		background-position: bottom;
+		background-repeat: repeat-x;
+		background-size: 20%;
+		border-bottom: 0;
+		padding-bottom: .3em;
+		text-decoration: none;
+	}
+	
+	a{
+		text-decoration: none;
+		color: black;
+	}
+	
+	.ime{
+		text-align: center;
+		font-size: 1.8vh;
+		margin-left: -27%;
+		margin-top: -40%;
+		text-shadow: black;
+		font-weight: 50%;
+		color: rgb(31, 31, 31);
+		
+	}
+	
+	.ime:hover{
+		color: rgb(37, 37, 158);
+	}
+	
+	.link {
+		outline: none;
+		text-decoration: none;
+		position: relative;
+     	font-size: 2.5vh;
+		line-height: 1;
+		color: rgb(65, 64, 64);
+		display: inline-block;
+	}
+	
+	.link--kukuri {
+		text-transform: uppercase;
+		font-weight: 900;
+		overflow: hidden;
+		line-height: 0.75;
+		color: rgb(65, 64, 64);
+		text-transform: uppercase;
+		font-weight: 900;
+		overflow: hidden;
+		line-height: 0.75;
+		color: rgb(61, 51, 51);
+	}
+	
+	.link--kukuri:hover {
+		color: rgb(54, 53, 53);
+	}
+	
+	.link--kukuri::after {
+		content: '';
+		position: absolute;
+		height: 15px;
+		width: 100%;
+		top: 50%;
+		margin-top: -8px;
+		right: 0;
+		background: white;
+		transform: translate3d(-100%,0,0);
+		transition: transform 0.4s;
+		transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+	}
+	
+	.link--kukuri:hover::after {
+		transform: translate3d(100%,0,0);
+	}
+	
+	.link--kukuri::before {
+		content: attr(data-letters);
+		position: absolute;
+		z-index: 2;
+		overflow: hidden;
+		color: rgb(0, 0, 0);
+		white-space: nowrap;
+		width: 0%;
+		transition: width 0.4s 0.3s;
+	}
+	
+	.link--kukuri:hover::before {
+		width: 100%;
+	};
+	
+	
+	.biz{
+		font-size: vh;
+	}
+
+	.profpic{
+		width: 50%;
+		border-radius: 100%;
+		border: solid 3px black;
+		margin-top: -18%;
+		margin-left: 20%;
+	}
+
+	#aboutme{
+		text-align: center;
+		font-size: 3vh;
+	}
+
+	#projects{
+		text-align: center;
+		font-size: 3vh;
+	}
+
+	#contactinfo {
+		font-size: 3vh;
+	}
+	
+
+}
